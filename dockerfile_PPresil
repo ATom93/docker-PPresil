@@ -8,10 +8,11 @@ RUN apt-get update && \
 	pip3 install pandas && \
 	pip3 install scipy && \
 	pip3 install -U statsmodels && \
-	pip3 spectral && \
+	pip3 install spectral && \
+	pip3 install osgeo && \
 	mkdir ./Tmp && \
 	touch ./Tmp/MSaviFeat && \
 	chmod 777 ./Tmp/MSaviFeat && \
 	apt-get install -y zip && \
-	apt-get install -y unzip 
-
+	apt-get install -y unzip && \
+	apt-get install -y wget
