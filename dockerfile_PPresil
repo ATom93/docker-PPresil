@@ -5,8 +5,8 @@ SHELL ["/bin/bash", "-c"]
 RUN apt-get update && \
 	apt-get install -y python3 && \
 	apt-get install -y python3-pip && \
+	apt-get install -y python3-gdal && \
 	python3 -m pip install --upgrade pip && \
-	pip3 install python3-gdal && \
 	pip3 install pandas && \
 	pip3 install scipy && \
 	pip3 install -U statsmodels && \
