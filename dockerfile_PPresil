@@ -8,7 +8,7 @@ RUN apt-get update && \
 	python3 -m pip install --upgrade pip && \
 	apt-get install -y software-properties-common && \
 	add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable && \
-	apt install -y gdal-bin python-gdal python3-gdal &&\
+	apt install -y gdal-bin=2.2.2+dfsg-1~xenial1 python3-gdal=2.2.2+dfsg-1~xenial1 &&\
 	pip3 install pandas && \
 	pip3 install scipy && \
 	pip3 install -U statsmodels && \
